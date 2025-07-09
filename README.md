@@ -8,6 +8,7 @@
      - LSCC LFR
         - Charging Tutorial with B6 charger for LiIon & LiPo batteries(2S, 3S)
         - Source codes
+        - Tutorial: 
      - Bluetooth RC Controller Android App
      - AutoBin
      - Water Dispenser
