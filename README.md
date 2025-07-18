@@ -15,7 +15,7 @@
         - Tutorial: 
      - Bluetooth RC Controller Android App
      - AutoBin
-     - Water Dispenser
+     - [Water Dispenser](https://github.com/kazi-rakib/RoboticsClub/tree/main/Projects/ScienceFair25/Sonar_Sensor_HC-SR04)
        
 ## Tutorials
  - [A Brief Introduction To Arduino](https://www.youtube.com/watch?v=nL34zDTPkcs)
