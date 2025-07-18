@@ -19,6 +19,7 @@
        
 ## Tutorials
  - [A Brief Introduction To Arduino](https://www.youtube.com/watch?v=nL34zDTPkcs)
+ - [First program in Arduino Nano](https://www.youtube.com/watch?v=R102xfcx75I)
  - [Fundamentals: Currents, Voltage, Power & How to power your robots](https://www.youtube.com/watch?v=Iye4uVLmj8o&list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&index=5)
  - [LiPo Batteries: CAUTION!!!](https://youtu.be/Iye4uVLmj8o?list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&t=590)
  - [LiPo Guide for RC Beginners!](https://www.youtube.com/watch?v=Lk7wzVYmXSA&list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&index=5&t=262s)
