@@ -16,4 +16,17 @@
      - Bluetooth RC Controller Android App
      - AutoBin
      - Water Dispenser
-  
+       
+## Tutorials
+ - [A Brief Introduction To Arduino](https://www.youtube.com/watch?v=nL34zDTPkcs)
+ - [Fundamentals: Currents, Voltage, Power & How to power your robots](https://www.youtube.com/watch?v=Iye4uVLmj8o&list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&index=5)
+ - [LiPo Batteries: CAUTION!!!](https://youtu.be/Iye4uVLmj8o?list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&t=590)
+ - [LiPo Guide for RC Beginners!](https://www.youtube.com/watch?v=Lk7wzVYmXSA&list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&index=5&t=262s)
+ - [MY PLAYLIST](https://youtube.com/playlist?list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&si=s0Xlpj7HS1_l4KLY)
+
+## Pinouts:
+ - [Article: Arduino pinout](https://components101.com/microcontrollers/arduino-uno)
+ - <img src="https://github.com/kazi-rakib/RoboticsClub/nano-pinout-01.jpg" alt="Arduino Nano" />
+ - <img src="https://github.com/kazi-rakib/RoboticsClub/nano-pinout-02.jpg" alt="Arduino Nano" />
+ - <img src="https://github.com/kazi-rakib/RoboticsClub/uno-pinout-01.jpg" alt="Arduino Nano" />
+ - <img src="https://github.com/kazi-rakib/RoboticsClub/uno-pinout-02.jpg" alt="Arduino Nano" />
