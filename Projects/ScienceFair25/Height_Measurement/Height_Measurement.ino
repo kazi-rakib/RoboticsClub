@@ -116,19 +116,27 @@ void loop() {
 
   display.println("Thank you!");
   display.display();
+
+  // Sound the buzzer
+  if(HEIGHTcm > 0){
+    tone(buzzerPin, 1000, 3000);
+  }else {
+    noTone(buzzerPin);
+  }
+
   delay(20000); // let the visitors see his/her own height for 20 seconds
   display.clearDisplay();
 
   
 
   /// FOR DEBUGGING
-  /*  
-  Serial.print(inches);
+  // /*  
+  Serial.print(HEIGHTin);
   Serial.print("in, ");
-  Serial.print(cm);
+  Serial.print(HEIGHTcm);
   Serial.print("cm");
   Serial.println();
-  */
+  // */
   delay(100);
   
 }
