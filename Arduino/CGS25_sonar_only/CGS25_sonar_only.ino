@@ -7,7 +7,7 @@
  */
 
 // Project macro(s)
-#define MINIMUM_DISTANCE 6
+#define MINIMUM_DISTANCE 6.0
 
 
 
