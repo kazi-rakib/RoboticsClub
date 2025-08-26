@@ -7,7 +7,8 @@
 
 ## Some useful projects and libraries are shared here:
  - Library:
-     - Servo library
+     - [BitMap code generator](https://marlinfw.org/tools/u8glib/converter.html)
+     - Servo library 
  - Projects:
      - Robo Soccer Bot
         - RC Controller Android App
