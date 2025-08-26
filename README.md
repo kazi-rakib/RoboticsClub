@@ -1,4 +1,5 @@
-<img src="https://leaders.edu.bd/wp-content/uploads/2024/11/L-LOGO.jpg" />
+<img src="images/LSCC-banner.jpg" alt="banner" />
+<img src="images/LSCC-RoboticsClub-logo-dark-bg.jpg" alt="Club Logo" />
 
 # RoboticsClub
 ### Author: Rakib Hasan, Lecturer(Physics), Leaders' School & College Chattogram.
@@ -29,7 +30,9 @@
 
 ## Pinouts:
  - [Article: Arduino pinout](https://components101.com/microcontrollers/arduino-uno)
- - <img src="https://github.com/kazi-rakib/RoboticsClub/blob/main/nano-pinout-01.jpg?raw=true" alt="Arduino Nano" />
- - <img src="https://github.com/kazi-rakib/RoboticsClub/blob/main/nano-pinout-02.jpg?raw=true" alt="Arduino Nano" />
- - <img src="https://github.com/kazi-rakib/RoboticsClub/blob/main/uno-pinout-01.jpg?raw=true" alt="Arduino Nano" />
- - <img src="https://github.com/kazi-rakib/RoboticsClub/blob/main/uno-pinout-02.jpg?raw=true" alt="Arduino Nano" />
+ - <img src="images/nano-pinout-01.jpg" alt="Arduino Nano" />
+ - <img src="images/nano-pinout-02.jpg" alt="Arduino Nano" />
+ - <img src="images/uno-pinout-01.jpg" alt="Arduino Nano" />
+ - <img src="images/uno-pinout-02.jpg" alt="Arduino Nano" />
+ - <img src="ESP32-Robo-Soccer-Bot/Circuit_Diagram_SoccerBot_.jpg" alt="Arduino Nano" />
+ - <img src="LSCC_LFR/lfr_circuit-daigram-8-array-tb6612.jpg" alt="Arduino Nano" />
