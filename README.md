@@ -1,3 +1,4 @@
+# RoboticsClub
 <img src="images/LSCC-banner.jpg" alt="banner" />
 <img src="images/LSCC-RoboticsClub-logo-dark-bg.jpg" alt="Club Logo" />
 
