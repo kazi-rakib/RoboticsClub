@@ -52,7 +52,8 @@ void setup() {
  
   // Show initial display buffer contents on the screen --
   display.clearDisplay();
-  display.drawBitmap(0, 0, batman, 32, 13, WHITE);
+  // display.drawBitmap(0, 0, batman, 32, 13, WHITE);
+  display.drawBitmap(0, 0, batman, 64, 64, WHITE);
  
   display.display();
 }
