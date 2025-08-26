@@ -1,7 +1,7 @@
 /*
  * Project for LSCC Science Fair 2025
  *
- * https://github.com/kazi-rakib/RoboticsClub/Arduino/CGS25_Arisha
+ * https://github.com/kazi-rakib/RoboticsClub/Arduino/CGS25_sonar_with_display
  *
  * by Rakib Hasan
  */
