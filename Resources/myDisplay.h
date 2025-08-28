@@ -1,13 +1,10 @@
 /*
- * Project for LSCC Science Fair 2025
+ * Project for Robotics Club
  *
- * https://github.com/kazi-rakib/RoboticsClub/Arduino/CGS25_sonar_with_display
+ * https://github.com/kazi-rakib/RoboticsClub/Resources
  *
  * by Rakib Hasan
  */
-
-#define MINIMUM_DISTANCE 6.0
-
 // DISPLAY ====================================================================
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -19,7 +16,6 @@
  *
  * This bitmap from the file 'LSCC_Robotics_Club_logo.bmp'
  */
-
 const unsigned char logo [] PROGMEM = {
   B11111111,B11111111,B11111111,B11111111,B11111111,B11111111,B11111111,B11111111,
   B11111111,B11111111,B11111111,B11111111,B11111111,B11111111,B11111111,B11111111,
@@ -96,21 +92,8 @@ const unsigned char logo [] PROGMEM = {
 #define SCREEN_ADDRESS 0x3C
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-// SENSOR ====================================================================
-const int trigPin = 9;
-const int echoPin = 10;
-const int buzzerPin = 3;
-const int loadPin = 12;
-
-long duration;
-float cm, inches;
-
-void setup() {
+void initializeMyDisplay() {
   // DISPLAY ====================================================================
-  Serial.begin(115200);
- 
-  Serial.println(F("Starting!"));
- 
   // ------------------- For SPI -------------------
   // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
 //  if(!display.begin(SSD1306_SWITCHCAPVCC)) {
@@ -128,102 +111,26 @@ void setup() {
  
   // Show initial display buffer contents on the screen --
   display.clearDisplay();
-  // display.drawBitmap(0, 0, batman, 32, 13, WHITE);
   display.drawBitmap(32, 0, logo, 64, 64, WHITE);
   display.display();
   delay(1000);
-
-  // SENSOR ====================================================================
-  pinMode(11, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(LED_BUILTIN, OUTPUT); // for LED indicator
-
-  digitalWrite(11, LOW); // optional, for sonar sensor 
-  digitalWrite(8, HIGH); // optional, for sonar sensor
-
-  pinMode(buzzerPin, OUTPUT);
-  pinMode(loadPin, OUTPUT);
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  // Serial.begin(9600);
 }
 
-void loop() {
-  // PING
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-
-  duration = pulseIn(echoPin, HIGH);
-  // convert the time into a distance
-  inches = microsecondsToInches(duration);
-  cm = microsecondsToCentimeters(duration);
-  
-  // distance = (duration*.0343)/2; // in cm
-  // distance = (duration*AIR_SPEED)/2; // in cm
-  // delay(100);
-
+void myDisplay(char * label, float data, char * unit) {
   // DISPLAY =====================================================
   display.clearDisplay();
-
   display.setTextSize(1.5);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
-  display.print("Distance:\n\n ");
-  display.setTextSize(3);
-  display.print(cm);
+  display.print(label);
+  display.print(":\n\n ");
+  display.setTextSize(4);
+  display.println(data, 1);
   display.setTextSize(2);
-  display.setCursor(0, 30);
-  display.println("\n       cm");
-
-  // display.println(HEIGHTcm);
-  // display.println("    inches: ");
-  // display.println(HEIGHTin);
-
-  // display.println("Thank you!");
+  display.setCursor(0, 51);
+  // display.print("\n       ");
+  display.println(unit);
   display.display();
-
-  // Sound the buzzer
-  if(cm < MINIMUM_DISTANCE){
-    digitalWrite(loadPin, LOW);
-    digitalWrite(2, LOW);  
-    tone(buzzerPin, 1000, 3000);
-    
-  }else {
-    noTone(buzzerPin);
-    digitalWrite(loadPin, HIGH);
-    digitalWrite(2, HIGH);
-  }
-
-
-  /// FOR DEBUGGING
-  // /*  
-  Serial.print(inches);
-  Serial.print("in, ");
-  Serial.print(cm);
-  Serial.print("cm");
-  Serial.println();
-  // */
-  delay(100);  
+  // delay(100);  
 }
-
-
-float microsecondsToInches(long microseconds) {
-  // According to Parallax's datasheet for the PING))), there are 73.746
-  // microseconds per inch (i.e. sound travels at 1130 feet per second).
-  // This gives the distance travelled by the ping, outbound and return,
-  // so we divide by 2 to get the distance of the obstacle.
-  // See: https://www.parallax.com/package/ping-ultrasonic-distance-sensor-downloads/
-  return (float) microseconds / 74 / 2;
-}
-
-float microsecondsToCentimeters(long microseconds) {
-  // The speed of sound is 340 m/s or 29 microseconds per centimeter.
-  // The ping travels out and back, so to find the distance of the object we
-  // take half of the distance travelled.
-  return (float) microseconds / 29 / 2;
-}
-
 

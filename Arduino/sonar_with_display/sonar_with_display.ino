@@ -1,11 +1,11 @@
 /*
- * Project for LSCC Science Fair 2025
+ * Project for Robotics Club
  *
- * https://github.com/kazi-rakib/RoboticsClub/Arduino/CGS25_sonar_only
+ * https://github.com/kazi-rakib/RoboticsClub/Arduino/sonar_with_display
  *
  * by Rakib Hasan
  */
-
+#include "myDisplay.h"
 #define MINIMUM_DISTANCE 6.0
 
 // SENSOR ====================================================================
@@ -18,6 +18,12 @@ long duration;
 float cm, inches;
 
 void setup() {
+  Serial.begin(115200); 
+  Serial.println(F("Starting!"));
+
+  // DISPLAY ====================================================================
+  initializeMyDisplay();
+  
   // SENSOR ====================================================================
   pinMode(11, OUTPUT);
   pinMode(8, OUTPUT);
@@ -45,13 +51,15 @@ void loop() {
   // convert the time into a distance
   inches = microsecondsToInches(duration);
   cm = microsecondsToCentimeters(duration);
-
-  // Alternative method of calculating the distance 
+  
   // distance = (duration*.0343)/2; // in cm
   // distance = (duration*AIR_SPEED)/2; // in cm
   // delay(100);
 
-  // Sound the buzzer
+  // DISPLAY =====================================================
+  myDisplay("Distance", cm, "        cm");
+
+  // Sound the buzzer, turn on the load
   if(cm < MINIMUM_DISTANCE){
     digitalWrite(loadPin, LOW);
     digitalWrite(2, LOW);  
@@ -62,7 +70,6 @@ void loop() {
     digitalWrite(loadPin, HIGH);
     digitalWrite(2, HIGH);
   }
-
 
   /// FOR DEBUGGING
   // /*  
@@ -75,6 +82,12 @@ void loop() {
   delay(100);  
 }
 
+float microsecondsToCentimeters(long microseconds) {
+  // The speed of sound is 340 m/s or 29 microseconds per centimeter.
+  // The ping travels out and back, so to find the distance of the object we
+  // take half of the distance travelled.
+  return (float) microseconds / 29 / 2;
+}
 
 float microsecondsToInches(long microseconds) {
   // According to Parallax's datasheet for the PING))), there are 73.746
@@ -83,11 +96,4 @@ float microsecondsToInches(long microseconds) {
   // so we divide by 2 to get the distance of the obstacle.
   // See: https://www.parallax.com/package/ping-ultrasonic-distance-sensor-downloads/
   return (float) microseconds / 74 / 2;
-}
-
-float microsecondsToCentimeters(long microseconds) {
-  // The speed of sound is 340 m/s or 29 microseconds per centimeter.
-  // The ping travels out and back, so to find the distance of the object we
-  // take half of the distance travelled.
-  return (float) microseconds / 29 / 2;
 }
