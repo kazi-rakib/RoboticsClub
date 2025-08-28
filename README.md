@@ -1,6 +1,6 @@
 # RoboticsClub
 <img src="images/LSCC-banner.jpg" alt="banner" />
-<img src="images/LSCC-RoboticsClub-logo-dark-bg.jpg" alt="Club Logo" />
+<img src="images/LSCC-RoboticsClub-logo-dark-bg.jpg" alt="Club Logo" width="657px" />
 
 # RoboticsClub
 ### Author: Rakib Hasan, Lecturer(Physics), Leaders' School & College Chattogram.
