@@ -6,7 +6,7 @@
  * by Rakib Hasan
  */
 
-#define MINIMUM_DISTANCE 6.0
+#define MINIMUM_DISTANCE 12.0
 
 // DISPLAY ====================================================================
 #include <Wire.h>
