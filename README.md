@@ -9,6 +9,8 @@
  - ['C' Programming pdf book](<Computer Programming (C) 1st part by Tamim Shahriar Subeen.pdf>)
  - Alternative link: ['C' Programming pdf book](Computer%20Programming%20(C)%201st%20part%20by%20Tamim%20Shahriar%20Subeen.pdf)
  ### Arduino Tutorial:
+ - [Arduino for beginners](https://youtu.be/BLrHTHUjPuw?si=FxCcAPlGR9oAH-Kd)
+ - [TINKERCAD Tutorial](https://youtube.com/playlist?list=PLV6cmKvnKRs5geApVORPW79U6s3wpa0Ht&si=GXxQOKWkNMVWhMxO) 
  - [A Brief Introduction To Arduino](https://www.youtube.com/watch?v=nL34zDTPkcs)
  - [First program in Arduino Nano](https://www.youtube.com/watch?v=R102xfcx75I)
  - [Fundamentals: Currents, Voltage, Power & How to power your robots](https://www.youtube.com/watch?v=Iye4uVLmj8o&list=PLmZMSmNrIbn2F906Ibh4Jy4HtgfKOOqHC&index=5)
