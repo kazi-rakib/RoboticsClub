@@ -1,6 +1,6 @@
 int led1 = 3;         // the PWM pin the LED1 is attached to
-int led2 = 6;         // the PWM pin the LED2 is attached to
-int led3 = 9;         // the PWM pin the LED3 is attached to
+// int led2 = 6;         // the PWM pin the LED2 is attached to
+// int led3 = 9;         // the PWM pin the LED3 is attached to
 
 int brightness = 0;  // how bright the LED is
 int fadeAmount = 5;  // how many points to fade the LED by
