@@ -1,9 +1,9 @@
 int mq2Pin = A0; // Analog pin for MQ2
-int buzzerPin = 11; // Digital pin for buzzer
+int fanPin = 9; // Digital pin for buzzer
 int threshold = 400; // Set sensitivity threshold
 
 void setup() {
-  pinMode(buzzerPin, OUTPUT);
+  pinMode(fanPin, OUTPUT);
   Serial.begin(9600);
 }
 
@@ -13,9 +13,9 @@ void loop() {
   Serial.println(sensorValue);
   
   if (sensorValue > threshold) {
-    digitalWrite(buzzerPin, HIGH); // Alarm on
+    digitalWrite(fanPin, HIGH); // Alarm on
   } else {
-    digitalWrite(buzzerPin, LOW); // Alarm off
+    digitalWrite(fanPin, LOW); // Alarm off
   }
   delay(500);
 }
