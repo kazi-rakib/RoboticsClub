@@ -21,6 +21,7 @@
 
 ## Some useful projects and libraries are shared here:
  - Library:
+     - [LCD Custom Character Generator](https://marlinfw.org/tools/u8glib/converter.html)](https://maxpromer.github.io/LCD-Character-Creator/)
      - [BitMap code generator](https://marlinfw.org/tools/u8glib/converter.html)
      - Servo library 
  - Projects:
