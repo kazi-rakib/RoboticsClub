@@ -42,6 +42,8 @@
  - [How to use breadboard](https://www.learnrobotics.org/blog/how-to-wire-a-breadboard/)
 <img src="images/breadboard-vertical-power.webp" />
 <img src="images/breadboard-horizontal-rows.webp" />
+<img src="images/breadboard-1.png" />
+
  - [Article: Arduino pinout](https://components101.com/microcontrollers/arduino-uno)
 
  - <img src="images/nano-pinout-01.jpg" alt="Arduino Nano" />
