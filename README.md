@@ -9,6 +9,7 @@
  - ['C' Programming pdf book](<Computer Programming (C) 1st part by Tamim Shahriar Subeen.pdf>)
  - Alternative link: ['C' Programming pdf book](Computer%20Programming%20(C)%201st%20part%20by%20Tamim%20Shahriar%20Subeen.pdf)
  ### Arduino Tutorial:
+ - [Complete course: Programming + Arduino - Beginner to advanced guide](https://youtube.com/playlist?list=PLBZJhPWICzfyGNH_-EOC5tQy5IdhfHGbH&si=0ErL0wofuj3FTMdV)
  - [Arduino for beginners](https://youtu.be/BLrHTHUjPuw?si=FxCcAPlGR9oAH-Kd)
  - [TINKERCAD Tutorial](https://youtube.com/playlist?list=PLV6cmKvnKRs5geApVORPW79U6s3wpa0Ht&si=GXxQOKWkNMVWhMxO) 
  - [A Brief Introduction To Arduino](https://www.youtube.com/watch?v=nL34zDTPkcs)
@@ -20,6 +21,7 @@
 
 ## Some useful projects and libraries are shared here:
  - Library:
+     - [LCD Custom Character Generator](https://maxpromer.github.io/LCD-Character-Creator/)
      - [BitMap code generator](https://marlinfw.org/tools/u8glib/converter.html)
      - Servo library 
  - Projects:
@@ -40,6 +42,8 @@
  - [How to use breadboard](https://www.learnrobotics.org/blog/how-to-wire-a-breadboard/)
 <img src="images/breadboard-vertical-power.webp" />
 <img src="images/breadboard-horizontal-rows.webp" />
+<img src="images/breadboard-1.png" />
+
  - [Article: Arduino pinout](https://components101.com/microcontrollers/arduino-uno)
 
  - <img src="images/nano-pinout-01.jpg" alt="Arduino Nano" />
